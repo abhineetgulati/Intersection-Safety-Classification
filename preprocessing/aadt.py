@@ -3,7 +3,7 @@ import networkx as nx
 import pandas as pd
 
 # 1. Load data and create a unique ID for each segment
-df = pd.read_csv('AADT.csv', nrows=10) # Testing with 10 rows
+df = pd.read_csv('AADT.csv')
 df['segment_id'] = df.index 
 
 # Load NYC graph
